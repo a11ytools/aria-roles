@@ -73,3 +73,7 @@ const ARIA_ROLES = [
 function getAriaRoles() {
   return ARIA_ROLES;
 }
+
+function isValidAriaRole(role) {
+  return ARIA_ROLES.includes(role);
+}
