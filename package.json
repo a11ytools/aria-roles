@@ -1,5 +1,5 @@
 {
-  "name": "aria-roles",
+  "name": "@a11ytools/aria-roles",
   "version": "1.0.0",
   "description": "A utility for fetching valid ARIA roles dynamically, validating roles, and providing additional accessibility-related functions.",
   "type": "module",
@@ -20,7 +20,9 @@
     "aria utilities",
     "accessibility",
     "a11y",
-    "web accessibility"
+    "web accessibility",
+    "aria attributes",
+    "assistive technology"
   ],
   "author": "zenluv (https://github.com/zenluv)",
   "license": "MIT",
@@ -30,5 +32,8 @@
   "homepage": "https://github.com/zenluv/aria-roles#readme",
   "devDependencies": {
     "vitest": "^3.0.7"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
