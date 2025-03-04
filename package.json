@@ -1,0 +1,34 @@
+{
+  "name": "aria-roles",
+  "version": "1.0.0",
+  "description": "A utility for fetching valid ARIA roles dynamically, validating roles, and providing additional accessibility-related functions.",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zenluv/aria-roles.git"
+  },
+  "keywords": [
+    "aria",
+    "aria roles",
+    "aria utilities",
+    "accessibility",
+    "a11y",
+    "web accessibility"
+  ],
+  "author": "zenluv (https://github.com/zenluv)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zenluv/aria-roles/issues"
+  },
+  "homepage": "https://github.com/zenluv/aria-roles#readme",
+  "devDependencies": {
+    "vitest": "^3.0.7"
+  }
+}
