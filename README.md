@@ -1,24 +1,26 @@
 # aria-roles
 
-This is a small utility library to fetch valid ARIA roles. The goal is to make it easier for developers to work with accessibility roles without hardcoding them.
+**aria-roles** is a lightweight utility library that provides a reliable way to fetch valid ARIA roles dynamically. It simplifies accessibility development by preventing hardcoded role values and enabling validation for better UI accessibility compliance.
 
-## Features
-- Fetch a list of all valid ARIA roles
-- Check if a role is valid
-- Lightweight and easy to use
+## 🚀 Features
+- 📜 Retrieve a complete, up-to-date list of all valid ARIA roles
+- ✅ Validate whether a given role is a recognized ARIA role
+- ⚡ Lightweight, fast, and dependency-free
+- 🔍 Designed for use in accessibility tooling, testing, and frontend frameworks
 
-## Installation
-Coming Soon
+## 📦 Installation
+```sh
+npm install @a11ytools/aria-roles
+```
 
-## Usage
-Coming Soon
+## 🔧 Usage
+```js
+import { getAriaRoles, isValidAriaRole } from "@a11ytools/aria-roles";
 
-## Notes
-This is a work in progress. Still exploring ways to structure this utility.
+console.log(getAriaRoles()); // Returns an array of valid ARIA roles
+console.log(isValidAriaRole("button")); // true
+console.log(isValidAriaRole("fake-role")); // false
+```
 
-## Contributing
-Not accepting contributions yet.
-
-## License
-MIT License
-
+## 📜 License
+This project is licensed under the MIT License.
