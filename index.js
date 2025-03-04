@@ -1,4 +1,4 @@
-const ARIA_ROLES = [
+export const ARIA_ROLES = [
   'alert',
   'alertdialog',
   'application',
@@ -70,10 +70,10 @@ const ARIA_ROLES = [
   'treeitem',
 ];
 
-function getAriaRoles() {
+export const getAriaRoles = () => {
   return ARIA_ROLES;
-}
+};
 
-function isValidAriaRole(role) {
+export const isValidAriaRole = (role) => {
   return ARIA_ROLES.includes(role);
-}
+};
