@@ -1,14 +1,22 @@
 {
   "name": "@a11ytools/aria-roles",
-  "version": "1.0.0",
-  "description": "A utility for fetching valid ARIA roles dynamically, validating roles, and providing additional accessibility-related functions.",
+  "version": "1.0.2",
+  "description": "A utility for fetching valid ARIA roles dynamically, validating roles, and providing type-safe access to ARIA role names.",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "vitest"
+    "build": "tsc",
+    "test": "vitest",
+    "prepublishOnly": "npm run build",
+    "lint": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -22,7 +30,9 @@
     "a11y",
     "web accessibility",
     "aria attributes",
-    "assistive technology"
+    "assistive technology",
+    "typescript",
+    "type-safe"
   ],
   "author": "zenluv (https://github.com/zenluv)",
   "license": "MIT",
@@ -31,10 +41,11 @@
   },
   "homepage": "https://github.com/zenluv/aria-roles#readme",
   "devDependencies": {
-    "vitest": "^3.0.7"
+    "@types/node": "^22.13.9",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "types": "index.d.ts"
+  }
 }
