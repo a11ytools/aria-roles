@@ -111,6 +111,37 @@ export default {
 </script>
 ```
 
+## 🧪 Testing Examples
+
+```tsx
+import { render, screen } from '@testing-library/react';
+import { ariaRoles, isValidAriaRole } from '@a11ytools/aria-roles';
+
+// React Testing Library - use ariaRoles for type-safe queries
+test('Component uses correct ARIA roles', () => {
+  render(<MyComponent />);
+  
+  // Query elements by their roles using ariaRoles
+  const button = screen.getByRole(ariaRoles.button);
+  const navigation = screen.getByRole(ariaRoles.navigation);
+  
+  // Verify elements have proper attributes
+  expect(button).toHaveAttribute('aria-pressed', 'false');
+  expect(navigation).toBeInTheDocument();
+});
+
+// Validate all roles in a component
+test('All roles are valid', () => {
+  const { container } = render(<MyComponent />);
+  
+  // Check that all role attributes are valid
+  container.querySelectorAll('[role]').forEach(element => {
+    const role = element.getAttribute('role');
+    expect(isValidAriaRole(role)).toBe(true);
+  });
+});
+```
+
 ## 🔄 API Reference
 
 ### `getAllAriaRoles()`
@@ -146,34 +177,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📜 License
 This project is licensed under the MIT License.
-
-## 🧪 Testing Examples
-
-```tsx
-import { render, screen } from '@testing-library/react';
-import { ariaRoles, isValidAriaRole } from '@a11ytools/aria-roles';
-
-// React Testing Library - use ariaRoles for type-safe queries
-test('Component uses correct ARIA roles', () => {
-  render(<MyComponent />);
-  
-  // Query elements by their roles using ariaRoles
-  const button = screen.getByRole(ariaRoles.button);
-  const navigation = screen.getByRole(ariaRoles.navigation);
-  
-  // Verify elements have proper attributes
-  expect(button).toHaveAttribute('aria-pressed', 'false');
-  expect(navigation).toBeInTheDocument();
-});
-
-// Validate all roles in a component
-test('All roles are valid', () => {
-  const { container } = render(<MyComponent />);
-  
-  // Check that all role attributes are valid
-  container.querySelectorAll('[role]').forEach(element => {
-    const role = element.getAttribute('role');
-    expect(isValidAriaRole(role)).toBe(true);
-  });
-});
-```
