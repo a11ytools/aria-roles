@@ -19,7 +19,8 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+        # Disable cache to avoid post-job cleanup errors
+        # cache: 'npm'
     - run: npm ci
     - run: npm run build
     - run: npm test
@@ -36,7 +37,8 @@ jobs:
       with:
         node-version: '20.x'
         registry-url: 'https://registry.npmjs.org'
-    - run: npm ci
+    # Use regular npm install instead of ci to avoid cache issues
+    - run: npm install
     - run: npm run build
     - name: Check version change
       id: check_version
