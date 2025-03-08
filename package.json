@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zenluv/aria-roles.git"
+    "url": "git+https://github.com/a11ytools/aria-roles.git"
   },
   "keywords": [
     "aria",
@@ -37,12 +37,12 @@
     "typescript",
     "type-safe"
   ],
-  "author": "zenluv (https://github.com/zenluv)",
+  "author": "Venkata Janapareddy (https://github.com/venkata-janapareddy)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zenluv/aria-roles/issues"
+    "url": "https://github.com/a11ytools/aria-roles/issues"
   },
-  "homepage": "https://github.com/zenluv/aria-roles#readme",
+  "homepage": "https://github.com/a11ytools/aria-roles#readme",
   "devDependencies": {
     "@types/node": "^22.13.9",
     "typescript": "^5.8.2",

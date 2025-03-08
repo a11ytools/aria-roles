@@ -111,7 +111,7 @@ export default {
 </script>
 ```
 
-## 🧪 Testing Examples
+### 🧪 Testing Example
 
 ```tsx
 import { render, screen } from '@testing-library/react';
