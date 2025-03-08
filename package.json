@@ -1,6 +1,6 @@
 {
   "name": "@a11ytools/aria-roles",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A utility for fetching valid ARIA roles dynamically, validating roles, and providing type-safe access to ARIA role names.",
   "type": "module",
   "main": "dist/index.js",
