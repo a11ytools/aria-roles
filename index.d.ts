@@ -1,4 +1,4 @@
-declare module "@a11ytools/aria-roles" {
+declare module '@a11y-tools/aria-roles' {
   export type AriaRole =
     | 'alert'
     | 'alertdialog'
