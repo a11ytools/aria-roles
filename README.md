@@ -11,14 +11,14 @@
 
 ## 📦 Installation
 ```sh
-npm install @a11ytools/aria-roles
+npm install @a11y-tools/aria-roles
 ```
 
 ## 🔧 Usage
 
 ### Basic Usage
 ```js
-import { getAllAriaRoles, isValidAriaRole, ariaRoles } from "@a11ytools/aria-roles";
+import { getAllAriaRoles, isValidAriaRole, ariaRoles } from "@a11y-tools/aria-roles";
 
 // Get all valid ARIA roles
 console.log(getAllAriaRoles()); // Returns an array of valid ARIA roles
@@ -34,7 +34,7 @@ element.setAttribute('role', ariaRoles.tabpanel);
 
 ### TypeScript Usage
 ```ts
-import { AriaRole, ariaRoles, isValidAriaRole } from "@a11ytools/aria-roles";
+import { AriaRole, ariaRoles, isValidAriaRole } from "@a11y-tools/aria-roles";
 
 // Type-safe role definition
 const myRole: AriaRole = ariaRoles.button;
@@ -53,7 +53,7 @@ function setRole(element: HTMLElement, role: string) {
 ### React Example
 ```tsx
 import React from 'react';
-import { ariaRoles } from '@a11ytools/aria-roles';
+import { ariaRoles } from '@a11y-tools/aria-roles';
 
 function AccessibleButton({ children, onClick }) {
   return (
@@ -87,7 +87,7 @@ function AccessibleButton({ children, onClick }) {
 </template>
 
 <script>
-import { ariaRoles } from '@a11ytools/aria-roles';
+import { ariaRoles } from '@a11y-tools/aria-roles';
 
 export default {
   setup() {
@@ -115,7 +115,7 @@ export default {
 
 ```tsx
 import { render, screen } from '@testing-library/react';
-import { ariaRoles, isValidAriaRole } from '@a11ytools/aria-roles';
+import { ariaRoles, isValidAriaRole } from '@a11y-tools/aria-roles';
 
 // React Testing Library - use ariaRoles for type-safe queries
 test('Component uses correct ARIA roles', () => {

@@ -3,7 +3,7 @@ import {
   getAllAriaRoles,
   isValidAriaRole,
   ariaRoles,
-} from '@a11ytools/aria-roles';
+} from '@a11y-tools/aria-roles';
 
 // Example 1: Get all ARIA roles
 console.log('All ARIA roles:');

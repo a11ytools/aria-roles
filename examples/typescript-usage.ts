@@ -4,7 +4,7 @@ import {
   isValidAriaRole,
   ariaRoles,
   AriaRole,
-} from '@a11ytools/aria-roles';
+} from '@a11y-tools/aria-roles';
 
 // Example 1: Type-safe role definition
 const buttonRole: AriaRole = ariaRoles.button;
